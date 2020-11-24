@@ -3,6 +3,7 @@ header('content-type:text/html;charset=utf-8');
 error_reporting(E_ALL &~E_NOTICE);
 
 define("ROOT", __DIR__);
+define("STATIC_PATH", "/github/mvc");
 
 require_once ROOT . '/lib/common.func.php';
 require_once ROOT . '/lib/mysql.inc.php';
@@ -17,6 +18,7 @@ if($controller == ''){
 if($action == ''){
     $action = 'index';
 }
+
 
 //包含相关的控制文件
 require_once ROOT . '/controller/' . $controller . '.php';

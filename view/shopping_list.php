@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>购物车</title>
-    <link rel="stylesheet" href="/static/css/shopcar.css">
+    <link rel="stylesheet" href="<?= STATIC_PATH ?>/static/css/shopcar.css">
     <script src='http://cdn.bootcss.com/jquery/2.2.4/jquery.js'></script>
-    <script src="/static/js/layer/layer.js"></script>
+    <script src="<?= STATIC_PATH ?>/static/js/layer/layer.js"></script>
 </head>
 <body>
 <!-- header区域 -->
 <header class="header">
     <div class="logo"></div>
     <div class="nav">
-        <a href="/view/course_release.html" class="nav__item ">添加课程</a>
-        <a href="/index.php/ProductController/display" class="nav__item nav__item_icon_new ">课程列表</i></a>
-        <a href="/index.php/CartController/display" class="nav__item nav__course">购物车</a>
+        <a href="<?= STATIC_PATH ?>/view/course_release.php" class="nav__item ">添加课程</a>
+        <a href="<?= STATIC_PATH ?>/index.php/ProductController/display" class="nav__item nav__item_icon_new ">课程列表</i></a>
+        <a href="<?= STATIC_PATH ?>/index.php/CartController/display" class="nav__item nav__course">购物车</a>
     </div>
     <div class="profile">
     </div>

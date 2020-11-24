@@ -3,10 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="<?= $base_url ?>/static/css/list.css">
+	<link rel="stylesheet" href="<?= STATIC_PATH ?>/static/css/list.css">
     <!--引入jquery.js文件-->
     <script src='http://cdn.bootcss.com/jquery/2.2.4/jquery.js'></script>
-    <script src="<?= $base_url ?>/static/js/layer/layer.js"></script>
+    <script src="<?= STATIC_PATH ?>/static/js/layer/layer.js"></script>
     <!--引入插件.js文件-->
     <script src='http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
     <!--引入插件.css文件-->
@@ -17,9 +17,9 @@
 	<header class="header">
 		<div class="logo"></div>
         <div class="nav">
-            <a href="/view/course_release.html" class="nav__item ">添加课程</a>
-            <a href="/index.php/ProductController/display" class="nav__item nav__item_icon_new ">课程列表</i></a>
-            <a href="/index.php/CartController/display" class="nav__item">购物车</a>
+            <a href="<?= STATIC_PATH ?>/view/course_release.php" class="nav__item ">添加课程</a>
+            <a href="<?= STATIC_PATH ?>/index.php/ProductController/display" class="nav__item nav__item_icon_new ">课程列表</i></a>
+            <a href="<?= STATIC_PATH ?>/index.php/CartController/display" class="nav__item">购物车</a>
         </div>
 	</header>
 <div id="main">
