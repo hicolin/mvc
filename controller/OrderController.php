@@ -5,8 +5,9 @@
  * Date: 2018-02-11
  * Time: 15:18
  */
-require_once '/model/order.php';
-require_once '/model/cart.php';
+require_once ROOT . '/model/order.php';
+require_once ROOT . '/model/cart.php';
+
 class OrderController{
     /**
      * 订单添加，购物车清空

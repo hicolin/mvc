@@ -7,10 +7,10 @@
  */
 //数据库配置参数
 $mysql_config = array(
-    'host' => 'hdm397036328.my3w.com',
-    'user' => 'hdm397036328',
-    'password' => 'cclhao787347840hao',
-    'dbName' => 'hdm397036328_db',
+    'host' => '127.0.0.1',
+    'user' => 'root',
+    'password' => 'root',
+    'dbName' => 'mvc',
     'charset' => 'utf8',
     'port' => 3306
 );

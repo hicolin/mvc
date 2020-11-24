@@ -5,7 +5,8 @@
  * Date: 2018-02-08
  * Time: 16:21
  */
-require_once '/model/cart.php';
+require_once ROOT . '/model/cart.php';
+
 class CartController{
     /**
      * 添加购物车
@@ -28,7 +29,7 @@ class CartController{
      */
     public function display(){
         $data = Cart::getCart();
-        require_once "/view/shopping_list.html";
+        require_once ROOT . "/view/shopping_list.php";
     }
 
     public function del(){
@@ -37,6 +38,6 @@ class CartController{
         if(!$result){
             echo "<script>alert('删除失败，请重新删除')</script>";
         }
-        header("Location: /index.php/CartController/display");
+        header("Location: " . ROOT . "/index.php/CartController/display");
     }
 }

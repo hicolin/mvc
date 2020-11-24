@@ -7,9 +7,9 @@
  */
 class IndexController{
     /**
-     * Ê×Ò³Õ¹Ê¾
+     * index
      */
     public function index(){
-       require_once '/index.html';
+       require_once ROOT . '/index.html';
     }
 }

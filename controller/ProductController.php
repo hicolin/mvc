@@ -5,7 +5,8 @@
  * Date: 2018-01-31
  * Time: 15:31
  */
-require_once '/model/product.php';
+require_once ROOT . '/model/product.php';
+
 class ProductController{
     /**
      * 课程添加
@@ -30,6 +31,7 @@ class ProductController{
      * 课程列表的展示
      */
     public function display(){
+
         $res = array();
         if(isset($_GET['p'])){
             $res['p'] = intval($_GET['p']);
@@ -38,7 +40,7 @@ class ProductController{
             $res['type'] = trim(addslashes($_GET['type']));
         }
         list($data,$total_pages) = Product::getCourse($res);
-        require_once '/view/course_list.html';
+        require_once ROOT . '/view/course_list.php';
     }
 
 
